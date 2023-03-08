@@ -1,0 +1,131 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #fc6c07;
+    color: white;
+    font-size: 25px;
+}
+
+.Tile {
+    height: 17px;
+    width: 17px;
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+@media all and (max-width: 1200px){
+    .Tile {
+        height: 14px;
+        width: 14px;
+    }
+}
+
+@media all and (max-width: 992px){
+    .Tile {
+        height: 10px;
+        width: 10px;
+    }
+}
+@media all and (max-width: 768px){
+    .Tile {
+        height: 8px;
+        width: 8px;
+    }
+}
+
+@media all and (max-width: 576px){
+    .Tile {
+        height: 5px;
+        width: 5px;
+    }
+}
+
+tbody {
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.Board {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.Buttons button {
+    margin: 0 10px 5px 5px;
+    border: none;
+    background-color: #fc6c07;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:6px 15px;
+    font-size:15px;
+    color: white;
+    min-width: 150px;
+}
+
+.Buttons button:hover {
+    background-color: #fc7c20;
+    color: white;
+}
+
+.Buttons button:active {
+    position:relative;
+    top:1px;
+}
+
+.Speed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    margin: 15px;
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+    background-size: 70% 100%;
+    background: rgba(255, 255, 255) linear-gradient(#cccccc, #cccccc) no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ff8c37;
+    cursor: ew-resize;
+    transition: background .3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.label {
+    color: #fc6c07;
+    font-size: 20px;
+}
+
+.leftMargin {
+    margin-left: 10px;
+}
+
+table {
+    border-spacing: 1px;
+}
