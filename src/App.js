@@ -1,6 +1,7 @@
 import './App.css';
 import Tile from "./Tile";
 import {useState} from "react";
+import icon from './icon.PNG'
 
 function App() {
 
@@ -116,7 +117,10 @@ function App() {
 
     return (
         <div>
-            <div className="Header"><i className="fa-solid fa-cubes-stacked"></i><span className='leftMargin'>Game of Life</span></div>
+            <div className="Header">
+                <img src={icon} alt='icon' className='logo'/>
+                <span className='leftMargin'>Game of Life</span>
+            </div>
 
             <div className="table-wrapper">
                 <table className="Board">
@@ -135,9 +139,15 @@ function App() {
 
             <div className='Speed'>
                 <label className="label" htmlFor="speed"><i className="fa-solid fa-gauge-high"></i></label>
-                <input type="range" id="speed" name="speed"
-                       min="0" max="1000" value={speed} step="100" onChange={changeSpeed}/>
-
+                <input type="range"
+                       id="speed"
+                       name="speed"
+                       min="0"
+                       max="1000"
+                       value={speed}
+                       step="100"
+                       onChange={changeSpeed}
+                />
             </div>
 
         </div>

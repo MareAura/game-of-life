@@ -1,6 +1,7 @@
 .Header {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px 0;
     background-color: #fc6c07;
     color: white;
@@ -128,4 +129,8 @@ input[type=range]::-webkit-slider-runnable-track  {
 
 table {
     border-spacing: 1px;
+}
+
+.logo {
+    height: 35px;
 }
